@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ylmjc-blog",
+  "compatibility_date": "2026-05-26",
+  "pages_build_output_dir": "public",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ylmjc-blog-db",
+      "database_id": "replace-with-your-d1-database-id"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>博客管理 | 樱落满尽城</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="blog-header">
+      <a class="brand" href="./">樱落满尽城 · Admin</a>
+      <nav>
+        <a href="./">文章</a>
+        <a href="admin.html">管理</a>
+        <a href="https://ylmjc-personal.pages.dev/">个人页</a>
+      </nav>
+    </header>
+
+    <main class="admin-shell">
+      <section class="blog-hero compact">
+        <p class="eyebrow">Write</p>
+        <h1>发布文章</h1>
+        <p>管理密钥会保存在浏览器本地。部署后请在 Cloudflare Pages 环境变量里设置 `ADMIN_TOKEN`。</p>
+      </section>
+
+      <form class="editor" data-editor>
+        <label>
+          管理密钥
+          <input name="token" type="password" autocomplete="current-password" placeholder="ADMIN_TOKEN">
+        </label>
+        <label>
+          标题
+          <input name="title" required placeholder="文章标题">
+        </label>
+        <label>
+          Slug
+          <input name="slug" required placeholder="hello-world">
+        </label>
+        <label>
+          摘要
+          <textarea name="excerpt" rows="3" placeholder="文章摘要"></textarea>
+        </label>
+        <label>
+          标签
+          <input name="tags" placeholder="生活, 学习, 作品">
+        </label>
+        <label>
+          正文 Markdown
+          <textarea name="content" rows="14" required placeholder="# 标题&#10;&#10;写点什么..."></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit">保存文章</button>
+          <button type="button" data-clear>清空</button>
+        </div>
+        <p class="muted" data-admin-status></p>
+      </form>
+    </main>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

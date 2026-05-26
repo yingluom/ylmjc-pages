@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="樱落满尽城的 Cloudflare D1 动态博客。">
+    <title>博客 | 樱落满尽城</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="blog-header">
+      <a class="brand" href="./">樱落满尽城 · Blog</a>
+      <nav>
+        <a href="./">文章</a>
+        <a href="admin.html">管理</a>
+        <a href="https://ylmjc-personal.pages.dev/">个人页</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="blog-hero">
+        <p class="eyebrow">Cloudflare D1 Blog</p>
+        <h1>写下正在发生的自己</h1>
+        <p>文章来自后端 API 和 D1 数据库，不是写死在页面里的静态列表。</p>
+      </section>
+
+      <section class="toolbar">
+        <input type="search" data-search placeholder="搜索标题、摘要、标签">
+        <button type="button" data-refresh>刷新</button>
+      </section>
+
+      <section class="posts" data-posts>
+        <p class="muted">正在读取文章...</p>
+      </section>
+    </main>
+
+    <footer class="footer">© 2026 樱落满尽城</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

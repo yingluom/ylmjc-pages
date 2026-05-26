@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="樱落满尽城的二次元个人导航介绍页。">
+    <title>樱落满尽城 | 导航庭院</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="wallpaper" data-wallpaper></div>
+    <canvas class="sakura-canvas" data-sakura aria-hidden="true"></canvas>
+
+    <header class="topbar">
+      <a class="brand" href="./">
+        <span class="brand-mark">樱</span>
+        <span>樱落满尽城</span>
+      </a>
+      <nav class="nav">
+        <a href="#nav">导航</a>
+        <a href="#profile">关于</a>
+        <a href="#live">动态</a>
+        <a href="https://ylmjc-blog.pages.dev/">博客</a>
+      </nav>
+      <button class="round-button" type="button" data-wallpaper-refresh title="换一张壁纸" aria-label="换一张壁纸">↻</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Anime gateway / personal space</p>
+          <h1>樱落满尽城</h1>
+          <p class="subtitle">在樱色、星光和代码之间，收藏常去的地方，也收藏正在变好的自己。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#nav">打开导航</a>
+            <a class="button glass" href="mailto:ylmjc114@gmail.com">联系我</a>
+          </div>
+        </div>
+
+        <aside class="anime-panel" aria-label="个人状态面板">
+          <div class="avatar-ring">
+            <div class="avatar-face">桜</div>
+          </div>
+          <p class="panel-title">YLMJC</p>
+          <p class="panel-text">一座正在更新的个人小城</p>
+          <div class="status-grid">
+            <span>导航</span>
+            <strong>8</strong>
+            <span>博客</span>
+            <strong>D1</strong>
+            <span>部署</span>
+            <strong>CF</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="quote-band" id="live">
+        <div>
+          <p class="eyebrow">Hitokoto</p>
+          <blockquote data-hitokoto>正在捕捉一句话...</blockquote>
+          <cite data-hitokoto-from></cite>
+        </div>
+        <button class="round-button large" type="button" data-hitokoto-refresh title="换一句话" aria-label="换一句话">✦</button>
+      </section>
+
+      <section class="section" id="nav">
+        <div class="section-head">
+          <p class="eyebrow">Bookmarks</p>
+          <h2>常用导航</h2>
+        </div>
+        <div class="link-grid">
+          <a class="nav-card cyan" href="https://github.com/" target="_blank" rel="noreferrer">
+            <span>⌘</span><strong>GitHub</strong><small>代码与开源世界</small>
+          </a>
+          <a class="nav-card amber" href="https://dash.cloudflare.com/" target="_blank" rel="noreferrer">
+            <span>☁</span><strong>Cloudflare</strong><small>部署、域名和边缘服务</small>
+          </a>
+          <a class="nav-card pink" href="https://chatgpt.com/" target="_blank" rel="noreferrer">
+            <span>✧</span><strong>ChatGPT</strong><small>灵感、学习和效率</small>
+          </a>
+          <a class="nav-card lime" href="https://ylmjc-blog.pages.dev/">
+            <span>文</span><strong>个人博客</strong><small>D1 后端动态博客</small>
+          </a>
+          <a class="nav-card violet" href="https://www.pixiv.net/" target="_blank" rel="noreferrer">
+            <span>絵</span><strong>Pixiv</strong><small>插画与灵感</small>
+          </a>
+          <a class="nav-card blue" href="https://www.bilibili.com/" target="_blank" rel="noreferrer">
+            <span>▶</span><strong>Bilibili</strong><small>视频、番剧和学习</small>
+          </a>
+          <a class="nav-card rose" href="https://www.notion.so/" target="_blank" rel="noreferrer">
+            <span>▣</span><strong>Notion</strong><small>笔记与计划</small>
+          </a>
+          <a class="nav-card green" href="mailto:ylmjc114@gmail.com">
+            <span>@</span><strong>Email</strong><small>ylmjc114@gmail.com</small>
+          </a>
+        </div>
+      </section>
+
+      <section class="profile-section" id="profile">
+        <div>
+          <p class="eyebrow">Profile</p>
+          <h2>关于这个小站</h2>
+        </div>
+        <div class="profile-copy">
+          <p>这里是樱落满尽城的个人导航庭院。它会显示随机二次元壁纸、每日一言、流动樱花和常用入口。</p>
+          <p>博客已经拆成独立项目，后端使用 Cloudflare D1，适合免费额度内运行。</p>
+          <ul>
+            <li>昵称：樱落满尽城</li>
+            <li>邮箱：ylmjc114@gmail.com</li>
+            <li>风格：夜樱、玻璃拟态、二次元动态壁纸</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 樱落满尽城</span>
+      <span>Wallpaper API: api.animepics.me · Hitokoto: v1.hitokoto.cn</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

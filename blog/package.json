@@ -1,0 +1,13 @@
+{
+  "name": "ylmjc-blog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev public --d1 DB=ylmjc-blog-db",
+    "deploy": "wrangler pages deploy public --project-name ylmjc-blog",
+    "db:init": "wrangler d1 execute ylmjc-blog-db --remote --file ./schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "latest"
+  }
+}
